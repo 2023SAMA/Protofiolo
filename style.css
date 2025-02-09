@@ -1,0 +1,319 @@
+html{
+    scroll-behavior: smooth;
+    width: auto;
+}
+html, body{
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(240, 249, 246);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.logo{
+    text-decoration: none;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    cursor: pointer;
+    letter-spacing: -3px;
+    color: rgb(30, 30, 177); 
+}
+.logo:hover{
+    color: rgb(18, 2, 81); 
+    transform: scale(1.08);
+}
+.navigation a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(30, 30, 177);  
+    padding-left: 30px;
+    display: inline-block;
+    transition:  0.5s ease-in-out; 
+}
+.navigation a:hover{
+    text-decoration: underline;
+    color:rgb(61, 4, 114); 
+    margin-bottom: 6px;
+    transform: scale(1.1); 
+}
+.main{
+    position: relative;
+    display: inline-block;
+}
+.main img{
+    filter: blur(7px);
+    width: 1500px;
+}
+.main-container{
+    position: absolute;
+    height: auto;
+    padding: 5px;
+    top: 150px;
+    left: 200px;
+    background-color: rgba(42, 40, 38, 0.007); 
+    box-shadow:  5px 5px  10px rgba(31, 5, 123, 0.338);
+    text-align: left;
+    border-radius: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+
+}
+.main-container h4{
+    position: relative;
+    font-weight: 900;
+    font-size: 30px;
+    bottom: -25px;
+    color: azure;
+}
+.main-container h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: rgba(8, 8, 176, 0.845); 
+    text-shadow: 10px 5px 5px  white;   
+}
+.main-container h3{
+    position: relative;
+    font-weight: 900;
+    font-size: 30px;
+    bottom: 25px;
+    color: azure;
+}
+ #main-btn{
+    background-color: rgb(30, 30, 177);
+    text-decoration: none;
+    color: azure;
+    display: inline-block;
+    transition:  0.5s ease-in-out; 
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width:auto;
+    padding: 15px; 
+    border-radius: 30px;
+    margin-top: -50px;
+    
+}
+#main-btn:hover{
+       background-color: azure;
+       color: rgb(30, 30, 177);
+    transform: scale(1.1); 
+
+
+}
+.social-icons{
+    display: flex;
+    gap: 30px;
+    padding: 5px 8px;
+    margin-top: 10px;
+}
+.social-icons i{
+    color: azure;
+    font-size: 30px;
+}
+.social-icons i:hover{
+    color: rgb(20, 20, 107);
+    transform: scale(0.7); 
+}
+ .title{
+    color: rgb(30, 30, 177);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#services{
+    position: relative;
+    padding: 100px;
+}
+ .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+h3{
+    color: rgb(30, 30, 177);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+ .content .box{
+    width: 350px;
+    gap: 10px;
+    align-items: center;
+    display: inline-block;
+    transition:  0.6s ease-in-out; 
+    margin-right: 50px;
+    background-color:rgba(230, 224, 224, 0.313); 
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+     box-shadow: 10px 5px 10px 5px rgba(0, 0, 0, 0.347) ;
+
+}
+
+.icon{
+    font-size: 100px;
+    color: rgb(30, 30, 177);
+}
+ .content .box:hover{
+    transform: scale(1.2); 
+      
+}
+#projects{
+    background-color: rgb(11, 2, 44);
+    width: 100%;
+    height: 800px;
+    padding-top: 40px;
+}
+#projects .title{
+    margin-top: 30px;
+}
+.myproject{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    padding-left: 80px;
+}
+.card{
+    background-color: azure;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    gap: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    transition:  0.5s ease-in; 
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.pro-img img{
+    width: 345px;
+    height: 150px;
+    border: 2px solid azure;
+    padding:auto;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.pro-img img:hover{
+    opacity: 0.8;
+}
+.info span{
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left:5px;
+    
+}
+
+.card  .info p{
+    font-size: large;
+    font-style: oblique;
+    font-weight: bold;
+    padding: 5px;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;    
+}
+.project-title a{
+    text-decoration: none;
+    color: rgb(30, 30, 177);
+    font-size: large;
+    padding-right: 15px; 
+}
+.project-title a:hover{
+    color:rgb(61, 4, 114);    
+}
+#contact p{
+    font-size: large;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+    background-color: rgb(11, 6, 34);
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin-top: 30px;
+    padding: 5px 20px;
+}
+footer>p{
+    color: azure;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+footer span{
+    color: rgb(111, 111, 244);
+}
+@media (max-width:1023px) {
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .main-container{
+        top: 100px;
+        left: 5px;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        
+    }
+}
+@media (max-width:700px){
+
+    .myproject {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+        padding-left: 50px;
+        align-items: center;
+    }
+    #projects{
+        height: auto;
+        padding-bottom: 10px;
+        width: auto;
+    }
+
+}
+@media (min-width:700px) and (max-width:1023px) {
+   .myproject, .content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    padding-left: 30px;
+}
+  #services .content > div:last-child{
+    grid-column: 1/-1;
+    justify-self: center;
+    margin: 50px;
+   }
+#projects{
+    height: auto;
+    padding-bottom: 10px;
+    width: auto;
+}  
+}
+
+
